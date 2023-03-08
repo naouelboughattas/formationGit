@@ -1,3 +1,5 @@
  git init
 git status
 git add pour  faire le traking
+git push local verd distace
+ git pull distance vers local
