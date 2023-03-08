@@ -3,3 +3,8 @@ git status
 git add pour  faire le traking
 git push local verd distace
  git pull distance vers local
+
+git add .
+git commit -m "fourth commit"
+git push
+git clone https://github.com/LindaOuer/formationGit.git
