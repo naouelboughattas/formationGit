@@ -8,3 +8,329 @@ git add .
 git commit -m "fourth commit"
 git push
 git clone https://github.com/LindaOuer/formationGit.git
+
+
+Microsoft Windows [version 10.0.19044.2130]
+(c) Microsoft Corporation. Tous droits réservés.
+
+C:\Users\HP User\Desktop\Formation>git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   another.txt
+        new file:   remarques.txt
+        modified:   test.txt
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   remarques.txt
+
+
+C:\Users\HP User\Desktop\Formation>git add .
+
+C:\Users\HP User\Desktop\Formation>git commit -m "third commit"
+[master 6747d48] third commit
+ 3 files changed, 4 insertions(+), 1 deletion(-)
+ create mode 100644 another.txt
+ create mode 100644 remarques.txt
+
+C:\Users\HP User\Desktop\Formation>ggit add .
+'ggit' n’est pas reconnu en tant que commande interne
+ou externe, un programme exécutable ou un fichier de commandes.
+
+C:\Users\HP User\Desktop\Formation>git add .
+
+C:\Users\HP User\Desktop\Formation>git commit -m "third commit"
+On branch master
+nothing to commit, working tree clean
+
+C:\Users\HP User\Desktop\Formation>git log
+commit 6747d48adf243926bafd77858b99841b90a89e15 (HEAD -> master)
+Author: naouelboughattas <naouel.boughattas@esprit.tn>
+Date:   Wed Mar 8 13:34:34 2023 +0000
+
+    third commit
+
+commit a545d97b3fa143be995bb5ff8fbfc902cfb2a221
+Author: naouelboughattas <naouel.boughattas@esprit.tn>
+Date:   Wed Mar 8 13:10:45 2023 +0000
+
+    First commit
+
+C:\Users\HP User\Desktop\Formation>git branch -M main
+
+C:\Users\HP User\Desktop\Formation>git status
+On branch main
+nothing to commit, working tree clean
+
+C:\Users\HP User\Desktop\Formation>git remote add origin https://github.com/naouelboughattas/formationGit.git
+
+C:\Users\HP User\Desktop\Formation>git remote add origin
+usage: git remote add [<options>] <name> <url>
+
+    -f, --fetch           fetch the remote branches
+    --tags                import all tags and associated objects when fetching
+                          or do not fetch any tag at all (--no-tags)
+    -t, --track <branch>  branch(es) to track
+    -m, --master <branch>
+                          master branch
+    --mirror[=(push|fetch)]
+                          set up remote as a mirror to push to or fetch from
+
+
+C:\Users\HP User\Desktop\Formation>git remote
+origin
+
+C:\Users\HP User\Desktop\Formation>git puch
+git: 'puch' is not a git command. See 'git --help'.
+
+The most similar command is
+        push
+
+C:\Users\HP User\Desktop\Formation>git push -u origin main
+info: please complete authentication in your browser...
+
+C:\Users\HP User\Desktop\Formation>git push -u origin main
+info: please complete authentication in your browser...
+Enumerating objects: 8, done.
+Counting objects: 100% (8/8), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (8/8), 580 bytes | 193.00 KiB/s, done.
+Total 8 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/naouelboughattas/formationGit.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+
+C:\Users\HP User\Desktop\Formation>git push -u origin main
+Everything up-to-date
+branch 'main' set up to track 'origin/main'.
+
+C:\Users\HP User\Desktop\Formation>git push -u origin main
+Everything up-to-date
+branch 'main' set up to track 'origin/main'.
+
+C:\Users\HP User\Desktop\Formation>git pull
+remote: Enumerating objects: 5, done.
+remote: Counting objects: 100% (5/5), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), 647 bytes | 1024 bytes/s, done.
+From https://github.com/naouelboughattas/formationGit
+   6747d48..089c9ba  main       -> origin/main
+Updating 6747d48..089c9ba
+Fast-forward
+ test.txt | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+C:\Users\HP User\Desktop\Formation>git pull
+remote: Enumerating objects: 5, done.
+remote: Counting objects: 100% (5/5), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), 652 bytes | 3.00 KiB/s, done.
+From https://github.com/naouelboughattas/formationGit
+   089c9ba..df5cf12  main       -> origin/main
+Updating 089c9ba..df5cf12
+Fast-forward
+ test.txt | 1 +
+ 1 file changed, 1 insertion(+)
+
+C:\Users\HP User\Desktop\Formation>git pull
+remote: Enumerating objects: 5, done.
+remote: Counting objects: 100% (5/5), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), 659 bytes | 3.00 KiB/s, done.
+From https://github.com/naouelboughattas/formationGit
+   df5cf12..3200f57  main       -> origin/main
+Updating df5cf12..3200f57
+Fast-forward
+ test.txt | 1 +
+ 1 file changed, 1 insertion(+)
+
+C:\Users\HP User\Desktop\Formation>git commit -m "fourth commit"
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   remarques.txt
+        modified:   test.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+C:\Users\HP User\Desktop\Formation>git add .
+
+C:\Users\HP User\Desktop\Formation>git commit .
+hint: Waiting for your editor to close the file... error: There was a problem with the editor 'vi'.
+Please supply the message using either -m or -F option.
+
+C:\Users\HP User\Desktop\Formation>git commit -m "fourth commit"
+[main c99b854] fourth commit
+ 2 files changed, 4 insertions(+), 1 deletion(-)
+
+C:\Users\HP User\Desktop\Formation>git push
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (4/4), 423 bytes | 423.00 KiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/naouelboughattas/formationGit.git
+   3200f57..c99b854  main -> main
+
+C:\Users\HP User\Desktop\Formation>git clone https://github.com/LindaOuer/formationGit.git
+Cloning into 'formationGit'...
+remote: Enumerating objects: 10, done.
+remote: Counting objects: 100% (10/10), done.
+remote: Compressing objects: 100% (5/5), done.
+remote: Total 10 (delta 0), reused 7 (delta 0), pack-reused 0
+Receiving objects: 100% (10/10), done.
+
+C:\Users\HP User\Desktop\Formation>git pull https://github.com/sendybhd/formationgit.git
+remote: Enumerating objects: 25, done.
+remote: Counting objects: 100% (25/25), done.
+remote: Compressing objects: 100% (18/18), done.
+remote: Total 25 (delta 1), reused 6 (delta 0), pack-reused 0
+Unpacking objects: 100% (25/25), 4.39 KiB | 5.00 KiB/s, done.
+From https://github.com/sendybhd/formationgit
+ * branch            HEAD       -> FETCH_HEAD
+fatal: refusing to merge unrelated histories
+
+C:\Users\HP User\Desktop\Formation>git clone https://github.com/sendybhd/formationgit.git
+Cloning into 'formationgit'...
+remote: Enumerating objects: 25, done.
+remote: Counting objects: 100% (25/25), done.
+remote: Compressing objects: 100% (18/18), done.
+remote: Total 25 (delta 1), reused 6 (delta 0), pack-reused 0
+Receiving objects: 100% (25/25), 4.41 KiB | 1.47 MiB/s, done.
+Resolving deltas: 100% (1/1), done.
+
+C:\Users\HP User\Desktop\Formation>git add .
+warning: adding embedded git repository: formationgit
+hint: You've added another git repository inside your current repository.
+hint: Clones of the outer repository will not contain the contents of
+hint: the embedded repository and will not know how to obtain it.
+hint: If you meant to add a submodule, use:
+hint:
+hint:   git submodule add <url> formationgit
+hint:
+hint: If you added this path by mistake, you can remove it from the
+hint: index with:
+hint:
+hint:   git rm --cached formationgit
+hint:
+hint: See "git help submodule" for more information.
+
+C:\Users\HP User\Desktop\Formation>git commit -m "fifth commit"
+[main 030e751] fifth commit
+ 2 files changed, 7 insertions(+), 1 deletion(-)
+ create mode 160000 formationgit
+
+C:\Users\HP User\Desktop\Formation>git push
+To https://github.com/naouelboughattas/formationGit.git
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'https://github.com/naouelboughattas/formationGit.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+C:\Users\HP User\Desktop\Formation>git push
+To https://github.com/naouelboughattas/formationGit.git
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'https://github.com/naouelboughattas/formationGit.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+C:\Users\HP User\Desktop\Formation>git pull
+remote: Enumerating objects: 8, done.
+remote: Counting objects: 100% (8/8), done.
+remote: Compressing objects: 100% (5/5), done.
+remote: Total 6 (delta 3), reused 3 (delta 1), pack-reused 0
+Unpacking objects: 100% (6/6), 919 bytes | 1024 bytes/s, done.
+From https://github.com/naouelboughattas/formationGit
+   c99b854..cd5f3a8  main       -> origin/main
+Merge made by the 'ort' strategy.
+ test.txt | 4 +++-
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+
+C:\Users\HP User\Desktop\Formation>git add .
+
+C:\Users\HP User\Desktop\Formation>git commit -m "fifth commit"
+On branch main
+Your branch is ahead of 'origin/main' by 2 commits.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+  (commit or discard the untracked or modified content in submodules)
+        modified:   formationgit (modified content)
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+C:\Users\HP User\Desktop\Formation>git push
+Enumerating objects: 9, done.
+Counting objects: 100% (8/8), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (5/5), 748 bytes | 748.00 KiB/s, done.
+Total 5 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), done.
+To https://github.com/naouelboughattas/formationGit.git
+   cd5f3a8..c229ac2  main -> main
+
+C:\Users\HP User\Desktop\Formation>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
